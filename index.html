@@ -38,6 +38,8 @@
 
     button, a{cursor: pointer;}
     a:any-link{color: inherit; text-decoration: inherit;}
+
+    span.icon{width: 24px; height:24px; margin: 0 8px 0 -8px;background-color: #111; background-repeat: no-repeat; background-position: center; background-size: cover; background-image: url(icon.png); display: inline-block; border-radius: 4px;}
   </style>
   <header>
     <style>
@@ -63,7 +65,7 @@
       </div>
     </div>
     <nav class="lower">
-        <a href="">Футбол</a><a href="">Хоккей</a><a href="">Баскетбол</a><a href="">Теннис</a><a href="">Бокс и ММА</a><a href="">Киберспорт</a><a class="rate brand" href="">РЕЙТИНГ</a>
+        <a href="#football"><span class="icon"></span>Футбол</a><a href="#hockey"><span class="icon"></span>Хоккей</a><a href="#basketball"><span class="icon"></span>Баскетбол</a><a href=""><span class="icon"></span>Теннис</a><a href=""><span class="icon"></span>Бокс и ММА</a><a href=""><span class="icon"></span>Киберспорт</a><a class="rate brand" href=""><span class="icon"></span>РЕЙТИНГ</a>
     </nav>
   </header>
   <main>
@@ -86,7 +88,7 @@
         <div class="img" style="background-image: url(images/1.png);">
           <div class="action">
             <a href="" class="first brand">МАТЧИ СЕГОДНЯ</a>
-            <a href="" class="second">ЭКСПРЕСС СЕГОДНЯ</a>
+            <a href="#express" class="second">ЭКСПРЕССЫ СЕГОДНЯ</a>
           </div>
         </div>
       </div>
@@ -131,7 +133,7 @@
       <div class="main">
         <div class="sport" id="football">
           <div class="header">
-            <h2>Футбол</h2>
+            <h2><span class="icon"></span>Футбол</h2>
             <button><span class="up"></span></button>
             <button><span class="down"></span></button>
           </div>
@@ -260,7 +262,7 @@
         </div>
         <div class="sport" id="hockey">
           <div class="header">
-            <h2>Хоккей</h2>
+            <h2><span class="icon"></span>Хоккей</h2>
             <button><span class="up"></span></button>
             <button><span class="down"></span></button>
           </div>
@@ -399,7 +401,7 @@
       <div class="main">
         <div class="sport" id="basketball">
           <div class="header">
-            <h2>Баскетбол</h2>
+            <h2><span class="icon"></span>Баскетбол</h2>
             <button><span class="up"></span></button>
             <button><span class="down"></span></button>
           </div>
@@ -528,7 +530,7 @@
         </div>
         <div class="sport" id="express">
           <div class="header">
-            <h2>Экспрессы</h2>
+            <h2><span class="icon"></span>Экспрессы</h2>
             <button><span class="up"></span></button>
             <button><span class="down"></span></button>
           </div>
