@@ -38,9 +38,6 @@
 
     button, a{cursor: pointer;}
     a:any-link{color: inherit; text-decoration: inherit;}
-    a:hover{opacity:0.6;}
-
-    /* Custom decoration */
   </style>
   <header>
     <style>
@@ -66,7 +63,7 @@
       </div>
     </div>
     <nav class="lower">
-        <a href="">Футбол</a><a href="">Хоккей</a><a href="">Баскетбол</a><a href="">Теннис</a><a href="">Бокс и ММА</a><a href="">Киберспорт</a><a class="rate" href="">РЕЙТИНГ</a>
+        <a href="">Футбол</a><a href="">Хоккей</a><a href="">Баскетбол</a><a href="">Теннис</a><a href="">Бокс и ММА</a><a href="">Киберспорт</a><a class="rate brand" href="">РЕЙТИНГ</a>
     </nav>
   </header>
   <main>
@@ -88,7 +85,7 @@
       <div class="main">
         <div class="img" style="background-image: url(images/1.png);">
           <div class="action">
-            <a href="" class="first">МАТЧИ СЕГОДНЯ</a>
+            <a href="" class="first brand">МАТЧИ СЕГОДНЯ</a>
             <a href="" class="second">ЭКСПРЕСС СЕГОДНЯ</a>
           </div>
         </div>
@@ -696,5 +693,9 @@
 </html>
 <style>
   /* a:not([style*="background-color: var(--brand-c)"]){box-shadow: 0 0 var(--s1) var(--s3); opacity: 1; border: var(--s3) solid ; color: var(--brand-c); } */
-  a:hover{box-shadow: 0 0 var(--s1) var(--s3); opacity: 1; border: var(--s3) solid ; color: var(--brand-c) !important; }
+  a:not(.brand):not(.bet):hover{box-shadow: 0 0 var(--s1) var(--s3); opacity: 1; border: var(--s3) solid ; color: var(--brand-c);}
+  a.brand:hover{box-shadow: 0 0 var(--s1) var(--s3); opacity: 1; border: var(--s3) solid ; color: var(--white);}
+  a.bet{background-color: transparent; color: transparent;}
+  .bet>.body>.prognose>.line>a:hover>svg{filter: drop-shadow(0 0 var(--s3) rgba(0, 0, 0, 1));}
+  .bet>.body>.prognose>.line>a:hover>svg>polyline{fill:var(--brand-c); stroke:var(--black);}
 </style>
