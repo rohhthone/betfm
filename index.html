@@ -114,6 +114,9 @@
 
       .bet{display: flex; flex-direction: column; align-items: center; box-sizing: border-box;}
       .bet>.header{width: 100%; display: flex;  justify-content: space-between;height: var(--h2); align-items: center; border-top: calc(var(--s2) / 2) solid var(--white); padding: var(--s1) 0; font-size: var(--f2);}
+      .content>.bet:first-child>.header{border-top: none;}
+      .bet.active>.header>button{display: none;}
+      .bet.active>.header{padding:0 var(--s0) 0 0; box-sizing: border-box; margin: var(--s1) 0;}
       .bet>.header>.title{width: 60%;}
       .bet>.header>.coefficient{background-color: var(--white); color: var(--black); padding: var(--s2) var(--s1); border-radius: var(--s2); font-weight: 700; letter-spacing: var(--upperspacing);}
       .bet>.body{width: 100%; font-size: var(--f2);}
@@ -141,7 +144,7 @@
             <button><span class="down"></span></button>
           </div>
           <div class="content">
-            <div class="bet active">
+            <div onclick="toggleBet(this)" class="bet active">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -165,7 +168,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -189,7 +192,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -213,7 +216,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -237,7 +240,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -270,7 +273,7 @@
             <button><span class="down"></span></button>
           </div>
           <div class="content">
-            <div class="bet active">
+            <div onclick="toggleBet(this)" class="bet active">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -294,7 +297,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -318,7 +321,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -342,7 +345,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -366,7 +369,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -409,7 +412,7 @@
             <button><span class="down"></span></button>
           </div>
           <div class="content">
-            <div class="bet active">
+            <div onclick="toggleBet(this)" class="bet active">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -433,7 +436,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -457,7 +460,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -481,7 +484,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -505,7 +508,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -538,7 +541,7 @@
             <button><span class="down"></span></button>
           </div>
           <div class="content">
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -562,7 +565,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -586,7 +589,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -610,7 +613,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -634,7 +637,7 @@
                 <div class="action"><button><span class="up"></span></button></div>
               </div>
             </div>
-            <div class="bet">
+            <div onclick="toggleBet(this)" class="bet">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -694,6 +697,12 @@
     <a href="https://rohhthone.com/">rohh</a>
     <a href="https://rohhthone.com/privacy">privacy</a>
   </footer>
+  <script>
+    function toggleBet(e){
+      var el=e;
+      el.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
 <style>
