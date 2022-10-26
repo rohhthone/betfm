@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,26 +9,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BETFM</title>
-  <meta name="description" content="Новостная редакция бесплатных ставок на спорт.">
-
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();
-  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-  ym(90884451, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/90884451" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
-<body class="advertising">
+<body>
   <style>
     :root{
       --h0: 64px;
@@ -52,24 +34,7 @@
       --s4:1px;
     }
     html{font-family: Roboto; font-size: var(--f0); background-color: var(--black); color: var(--white); width: 100vw;letter-spacing: var(--spacing); overflow-x: hidden; display: flex; justify-content: space-around; line-height: 1.4;}
-    body{width: 100%; height: auto; display: flex; align-items: center; justify-content: space-around; flex-direction: column;}
-    article{display:flex; align-items: center; flex-direction: column; width: 100vw; height: auto;}
-
-    header{width: var(--width_h);}
-    body.advertising{
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(https://altermama.ru/wp-content/uploads/2013/08/brendirovanie-saita-primer1.jpg);
-    }
-    article{
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(https://altermama.ru/wp-content/uploads/2013/08/brendirovanie-saita-primer1.jpg);
-    }
-
-    script, style{display: none !important;}
+    body{width: var(--width_h); height: auto; display: flex; align-items: center; justify-content: space-around; flex-direction: column;}
 
     button, a{cursor: pointer;}
     a:any-link{color: inherit; text-decoration: inherit;}
@@ -123,7 +88,7 @@
   <header>
     <style>
       header{display: flex; align-items: center; justify-content: space-between; width: inherit; flex-direction: column;  margin: calc(var(--h0) * 2) 0 0 0;}
-      header >*{display: flex; align-items: center;  width: var(--width_h); background-color: var(--black);}
+      header >*{display: flex; align-items: center;  width: 100%;}
       .upper{height: var(--h0); font-size: var(--f1);justify-content: space-between;}
       .lower{height: var(--h1);background-color: var(--brand-c1);justify-content: center;font-size: var(--f2);}
 
@@ -132,7 +97,7 @@
       .upper>.menu>.nav>a{display: flex; align-items: center; justify-content: space-around; background-color: var(--black); padding: 0 var(--s0);}
       .lower>a{text-transform: uppercase; background-color: var(--black); height: inherit;display: flex; align-items: center; justify-content: space-around; color: var(--white); height: 60%; padding: var(--s2) var(--s0); border-radius: var(--s1); letter-spacing: var(--upperspacing); font-weight: 400; margin: var(--s1);}
       .lower>a.rate{background-color: var(--brand-c); color: var(--black); font-weight: 800;}
-      .upper>.logo{color: var(--brand-c); margin: 0 var(--s0)}
+      .upper>.logo{color: var(--brand-c);}
 
       .menu>.social{margin: 0 var(--s0);}
       .menu>.social>a{height: auto; width: auto; display: flex; align-items: center; justify-content: space-around;}
@@ -140,10 +105,10 @@
 
     </style>
     <div class="upper">
-      <div class="logo" onclick="location.reload()"><h2 class="name">BETFM</h2></div>
+      <div class="logo"><h2 class="name">BETFM</h2></div>
       <div class="menu">
         <div class="social">
-          <a href="https://t.me/"><svg fill="#1af" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 72 72" width="48px" height="48px"><path d="M36,12c13.255,0,24,10.745,24,24S49.255,60,36,60S12,49.255,12,36S22.745,12,36,12z M44.279,45.783	c0.441-1.354,2.51-14.853,2.765-17.513c0.077-0.806-0.177-1.341-0.676-1.58c-0.603-0.29-1.496-0.145-2.533,0.229	c-1.421,0.512-19.59,8.227-20.64,8.673c-0.995,0.423-1.937,0.884-1.937,1.552c0,0.47,0.279,0.734,1.047,1.008	c0.799,0.285,2.812,0.895,4.001,1.223c1.145,0.316,2.448,0.042,3.178-0.412c0.774-0.481,9.71-6.46,10.351-6.984	c0.641-0.524,1.152,0.147,0.628,0.672c-0.524,0.524-6.657,6.477-7.466,7.301c-0.982,1.001-0.285,2.038,0.374,2.453	c0.752,0.474,6.163,4.103,6.978,4.685c0.815,0.582,1.641,0.846,2.398,0.846S43.902,46.94,44.279,45.783z"/></svg></a>
+          <a href="https://t.me/"><svg fill="#05e" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 72 72" width="48px" height="48px"><path d="M36,12c13.255,0,24,10.745,24,24S49.255,60,36,60S12,49.255,12,36S22.745,12,36,12z M44.279,45.783	c0.441-1.354,2.51-14.853,2.765-17.513c0.077-0.806-0.177-1.341-0.676-1.58c-0.603-0.29-1.496-0.145-2.533,0.229	c-1.421,0.512-19.59,8.227-20.64,8.673c-0.995,0.423-1.937,0.884-1.937,1.552c0,0.47,0.279,0.734,1.047,1.008	c0.799,0.285,2.812,0.895,4.001,1.223c1.145,0.316,2.448,0.042,3.178-0.412c0.774-0.481,9.71-6.46,10.351-6.984	c0.641-0.524,1.152,0.147,0.628,0.672c-0.524,0.524-6.657,6.477-7.466,7.301c-0.982,1.001-0.285,2.038,0.374,2.453	c0.752,0.474,6.163,4.103,6.978,4.685c0.815,0.582,1.641,0.846,2.398,0.846S43.902,46.94,44.279,45.783z"/></svg></a>
         </div>
         <div class="nav">
           <a href="">Рейтинг букмекеров</a>
@@ -158,7 +123,7 @@
   </header>
   <main>
     <style>
-      main{width: var(--width_h); height: auto; background-color: var(--black);}
+      main{width: var(--width_h); height: auto;}
     </style>
     <div class="landing">
       <style>
@@ -202,13 +167,12 @@
       button>span.down::before{content:"\276F";transform: rotate(90deg); color: var(--white); display: block;}
 
       .bet{display: flex; flex-direction: column; align-items: center; box-sizing: border-box;}
-      .bet>.header{width: 100%; display: flex;  justify-content: space-between;height: var(--h2); align-items: center; border-top: calc(var(--s4)) solid #fff5; padding: var(--s1) 0; font-size: var(--f2);}
+      .bet>.header{width: 100%; display: flex;  justify-content: space-between;height: var(--h2); align-items: center; border-top: calc(var(--s2) / 2) solid var(--white); padding: var(--s1) 0; font-size: var(--f2);}
       .content>.bet:first-child>.header{border-top: none;}
       .bet.active>.header>button{display: none;}
       .bet.active>.header{padding:var(--s1) var(--s0) var(--s1) 0; box-sizing: border-box; margin: var(--s1) 0;}
       .bet>.header>.title{width: 60%;}
-      .bet>.header>.coefficient{background-color: var(--white); color: var(--black); padding: var(--s2) var(--s1); border-radius: var(--s2); font-weight: 700; letter-spacing: var(--upperspacing); margin: 0 var(--s0);}
-      .bet>.header>.time{ margin: 0 var(--s1);}
+      .bet>.header>.coefficient{background-color: var(--white); color: var(--black); padding: var(--s2) var(--s1); border-radius: var(--s2); font-weight: 700; letter-spacing: var(--upperspacing);}
       .bet>.body{width: 100%; font-size: var(--f2);}
       .bet>.body>p{box-sizing: border-box; padding: 0 var(--h2); font-weight:300;}
       .bet>.body>.prognose{width: 100%; height: auto;}
@@ -234,7 +198,7 @@
             <button><span class="down"></span></button>
           </div>
           <div class="content">
-            <div onclick="toggleBet(this)" class="bet">
+            <div onclick="toggleBet(this)" class="bet active">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -363,7 +327,7 @@
             <button><span class="down"></span></button>
           </div>
           <div class="content">
-            <div onclick="toggleBet(this)" class="bet">
+            <div onclick="toggleBet(this)" class="bet active">
               <div class="header">
                 <div class="title">Наполи - Интер Милан</div>
                 <div class="coefficient">1.66</div>
@@ -490,270 +454,6 @@
         <style>.advertising2{ width: auto; height: auto;}.advertising2>img{width: 300px; height: 500px; object-fit: cover; margin: 0 var(--s0);}</style>
         <img src="images/image_12.png" alt="">
       </div>
-      <div class="advertising3">
-        <style>.advertising3{width: 100%; height: auto;}.advertising3>img{width: 100%; height: 200px; object-fit: cover; margin: var(--s0) 0;}</style>
-        <img src="images/image_11.png" alt="">
-      </div>
-      <div class="main">
-        <div class="sport" id="basketball">
-          <div class="header">
-            <h2><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 1200 1200"><defs><style>.cls-1{fill:#111;}</style></defs><path class="cls-1" d="M553.08,71.42c118.41,4.37,220.28,46.91,308.28,127.15-83.58,94.64-146.5,198.66-155.85,328.27H553.08Z"/><path class="cls-1" d="M553,552.63H705c2.75,132.4,66,236.91,153,330-56.79,67-207.51,128.65-305,124.9Z"/><path class="cls-1" d="M227.85,189.9c86.25-74.75,185-114.41,298.91-118.48V526.64H391.69C382,393.36,315.74,287,227.85,189.9Z"/><path class="cls-1" d="M392.23,552.83h134.5v453.82c-67.52,13.8-228.6-48.68-296-115.28C321.86,796.63,388.85,690,392.23,552.83Z"/><path class="cls-1" d="M367.59,553c-3.8,130.85-68,231.34-154.57,321.17C138.88,818.72,63.55,647.1,72.16,553Z"/><path class="cls-1" d="M70.92,526.77c5.71-124.47,51.33-230.35,138.9-319.86C293.42,298.73,356.6,399.17,367,526.77Z"/><path class="cls-1" d="M875.4,865.06C793.06,777,733,678.81,729.67,552.88H1006.8C1023.64,622.61,944,812.6,875.4,865.06Z"/><path class="cls-1" d="M730.31,526.67c9.48-122.5,68.87-220.21,148.44-310.54,82,87.86,124.55,190.8,130,310.54Z"/></svg>Баскетбол</h2>
-            <button><span class="up"></span></button>
-            <button><span class="down"></span></button>
-          </div>
-          <div class="content">
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sport" id="express">
-          <div class="header">
-            <h2><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 1080 1080"><defs><style>.cls-1{fill:#111;}</style></defs><path class="cls-1" d="M902.45,504.1c21,24.37,39.55,50.34,39.76,84.44.15,25-10.25,44-34,54.54a224.32,224.32,0,0,1-73.88,19.27c-25.13,2-50.31,3.46-75.45,5.38a145.3,145.3,0,0,0-18.36,3c-1.73.36-3.17,2.12-4.74,3.24,1.22,1.68,2.07,4,3.71,4.92a103.8,103.8,0,0,0,15.39,7.07c44.57,15.33,89.22,30.4,133.78,45.72,38.87,13.37,77.66,27,116.47,40.49a11.32,11.32,0,0,1,5.42,3.42l-31.35-9.41q-205-61.3-410-122.63Q392.54,590.62,215.92,537.59q-93.43-28-186.88-56c-2.55-.77-6.42-.7-4.19-6l37.54,6.52Q173.1,501.34,283.8,520.52c57.22,10,114.37,20.39,171.6,30.34,21.3,3.7,37.83,15.76,53.83,29,6,5,12,10.19,17.91,15.32a111,111,0,0,0,39.26,22.14c81.11,26,164,39.34,249.3,36.37,24.89-.87,49.62-3.08,73.55-10.61a122.2,122.2,0,0,0,12.35-4.5c28.82-12.52,41-35.87,35.1-66.76-4.23-22.24-14.81-41.45-27.93-59.49C906.73,509.54,904.56,506.84,902.45,504.1Z"/><path class="cls-1" d="M896.16,545.39c-11,3.17-21.79,7-32.93,9.37-30.91,6.49-62.15,5.62-93.33,2.3-70.27-7.48-138.16-24-202.08-54.81-25.84-12.44-51.28-25.69-76.93-38.51-49.14-24.56-101.37-35.05-156-32.43q-92,4.41-183.85,10.53c-39,2.58-77.91,6.57-116.86,9.92-.71.06-1.43,0-2.17,0,1-7.67,5.55-12.8,12.5-14,78.93-14.16,157.83-28.44,236.79-42.34q49.11-8.64,98.45-15.89c28.26-4.11,56.46-4.92,83.55,6.87,17,7.39,31.33,18.75,45.82,29.81,25.4,19.4,50.7,38.95,75.57,59,35.15,28.39,74.75,47.2,118.42,58.47,42.66,11,85.77,18.08,129.88,18.08a252.31,252.31,0,0,0,31.68-2.1c10.44-1.34,20.73-3.84,31.08-5.84Z"/><path class="cls-1" d="M623.86,325.84c20.06-.5,42.54,4.83,64,16.89C741.06,372.66,791,407.05,836,448.42c8.91,8.19,7.85,12-3.93,15.51-34.48,10.18-68.62,7.3-102.53-2.87-55-16.48-104.81-43.34-151.69-75.91-13.61-9.46-26.31-20.23-39.22-30.66-4.5-3.64-4.4-6.4.66-9.32a117.67,117.67,0,0,1,21.16-10C579.58,328.71,599.43,325.8,623.86,325.84ZM719.4,442.32a779.07,779.07,0,0,1-149.06-88.14c12-4.07,23.88-7.81,36-10.18s24.39-3.38,36.6-5c-23.8-3.34-69.53,4.83-83.67,14.84C608.2,391.77,660.55,422.87,719.4,442.32Z"/><path class="cls-1" d="M68.5,421.5c21.33-6.4,42.56-13.15,64-19.12,96.09-26.75,192.17-53.53,288.42-79.69a675.7,675.7,0,0,1,70.69-15.09c29.55-4.73,59.46-3.53,89.14-.39,17.56,1.85,35,5.1,52.23,8.59-6.51,0-13,.09-19.55,0-32.39-.52-63.33,4.74-91.37,22.19a12.42,12.42,0,0,1-7.79,1.74c-42.54-6.62-84.79-3.12-126.43,5.61-47.89,10-95.38,22-142.94,33.6C187,393,129.29,407.55,71.48,421.89c-.86.21-1.75.32-2.63.48Z"/><path class="cls-1" d="M801.77,539.14a354.85,354.85,0,0,1-74.83-10.93c-6.73-1.68-13.39-3.7-20.16-5.23-4.53-1-6.27-4-6.78-8.11-.73-5.88,1.84-11.39,6.78-13.86,5.7-2.85,11.32-2.57,16.51,1.31a55.28,55.28,0,0,1,4.19,3.89c-1.61-6.91-8.7-11.2-16.77-10.5-10.33.89-16.24,8.73-16.92,23.17-2-.57-3.82-1-5.57-1.63-7.5-2.89-14.9-6.07-22.48-8.71-4.16-1.45-5.72-4.25-6-8.17-.42-6.32,1.74-11.56,7.19-15,5.92-3.74,12.19-3.92,18.16-.31,2.89,1.75,5.19,4.46,7.38,6.41-1-6.89-8.93-12.47-18.2-12.27-11.78.26-19.08,8.27-21,23.63A279.41,279.41,0,0,1,602,471.07c.07-.5.15-1,.22-1.5,5.31-.54,10.63-1.56,15.94-1.55,13.51,0,27.13-.45,40.48,1.18,10.15,1.23,20.74,3.86,29.77,8.53,37.3,19.28,74.09,39.56,111.06,59.49A26.42,26.42,0,0,1,801.77,539.14Z"/><path class="cls-1" d="M436.62,519.74,56.05,473.93l.26-2.08c127.17,12.49,254.07,27.33,380.48,46.21Z"/><path class="cls-1" d="M1055.71,723.87l-197.58-54,.16-2.22c5.46,0,11.32-1.3,16.34.2,60,17.86,119.87,36.13,179.77,54.31a7.58,7.58,0,0,1,1.42.77Z"/></svg>Экспрессы</h2>
-            <button><span class="up"></span></button>
-            <button><span class="down"></span></button>
-          </div>
-          <div class="content">
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-            <div onclick="toggleBet(this)" class="bet">
-              <div class="header">
-                <div class="title">Наполи - Интер Милан</div>
-                <div class="coefficient">1.66</div>
-                <div class="date">20.10.2022</div>
-                <div class="time">18:00</div>
-                <button><span class="down"></span></button>
-              </div>
-              <div class="body">
-                <p>«Торино» выиграл только один из последних четырех домашних матчей лиги против фаворита на вылет «Лечче». «Сассуоло», тем временем, избежал поражений в четырех из последних пяти игр, включая ничью с «Миланом», и получил щедрую цену.</p>
-                <div class="prognose">
-                  <h2>ПРОГНОЗ BET FM</h2>
-                  <div class="line">
-                    <h3>Торино не проиграет </h3>
-                    <a href="" class="bet">
-                      <svg viewBox="0 0 500 100" fill="white">
-                        <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="action"><button><span class="up"></span></button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="advertising4">
         <style>.advertising4{width: 100%; height: auto;}.advertising4>img{width: 100%; height: 200px; object-fit: cover; margin: var(--s0) 0;}</style>
         <img src="images/image_10.png" alt="">
@@ -761,36 +461,25 @@
     </div>
     <div class="footer">
       <style>
-      .footer{width: 100%; border-top: var(--s2) solid var(--white); height: auto; box-sizing: border-box; padding: var(--h2); display: flex; justify-content: space-between; font-size: 0.8em;}
-      .footer>.icon>a>img{width: var(--h2);}
+      .footer{width: 100%; border-top: var(--s2) solid var(--white); height: auto; box-sizing: border-box; padding: var(--h2); display: flex; justify-content: space-between;}
+      .footer>.icon>img{width: var(--h1);}
       .footer>.icon{display: flex; flex-direction: column;}
-      .footer>.description{display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s2);}
+      .footer>.description{display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s1);}
       </style>
       <div class="icon">
-        <a><img loading="lazy" src="https://rohhthone.github.io/betfm/images/image_14.png" alt=""></a>
-        <a href="https://www.gamblingtherapy.org/ru"><img loading="lazy" src="https://rohhthone.github.io/betfm/images/image_15.png" alt="" ></a>
+        <img loading="lazy" src="https://rohhthone.github.io/betfm/images/image_14.png" alt="">
+        <img loading="lazy" src="https://rohhthone.github.io/betfm/images/image_15.png" alt="">
       </div>
       <div class="description">
-        <a>Футбол</a>
-        <a>Баскетбол</a>
-        <a>Теннис</a>
-        <a>Киберспорт</a>
-        <a>Бокс и ММА</a>
-        <a>Экспресс</a>
-        <a>Хоккей</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
+        <a>lorem ipsum</a>
       </div>
-    </div>
-    <div class="info" style="text-align: center; font-size: 0.8em;">
-      © 2022 «Бетфм.ру»
-
-Все материалы для лиц старше 18 лет.<br>
-Редакция не несет ответственноси за достоверность прогнозов, все прогнозы являются предположением на основе открытой аналитики спорта.<br>
-При использовании материалов с сайта просим использовать ссылку на Betfm<br><br>
-
-Свидетельство о регистрации СМИ Эл. № ФСXX-XXXXX<br><br>
-
-Политика конфиденциальности (Ссылка)<br>
-Для связи с редакцией: info@betfm.ru
     </div>
   </main>
   <footer>
