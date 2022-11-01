@@ -645,7 +645,7 @@ $conn->set_charset("utf8");
     </nav>
     <div class="phone prognoseoftheday">
       <a class="a">Прогноз дня</a>
-      <img src="https://rohhthone.github.io/betfm/1.png" alt="">
+      <img src="https://rohhthone.github.io/betfm/1.svg">
     </div>
   </header>
   <main>
