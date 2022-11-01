@@ -477,7 +477,7 @@ $conn->set_charset("utf8");
       --brand-c1:#070;
       --upperspacing:calc(1px * 1);
       --spacing:calc(1px * 0.6);
-      --width_h:1240px;
+      --width_h:1096px;
       --width_v:90vw;
       --s0:16px;
       --s1:8px;
@@ -522,6 +522,7 @@ $conn->set_charset("utf8");
       .bet>.body>.prognose>.line>a:hover>svg{filter: drop-shadow(0 0 var(--s3) rgba(0, 0, 0, 1));}
       .bet>.body>.prognose>.line>a:hover>svg>polyline{fill:var(--brand-c); stroke:var(--black);}
       body footer>a:hover{box-shadow: 0 0 0 0; opacity: 1; border: none;}
+      .phone{display: none;}
 
     @media screen and (max-width:1280px) {
         #screen4{display: none;}
@@ -552,6 +553,46 @@ $conn->set_charset("utf8");
           --f2:12px;
           --width_h:500px;
         }
+    }
+    @media screen and (max-width:100vh) {
+        #screen1{display: flex;}
+        :root{
+          --f0:14px;
+          --f1:13px;
+          --f2:12px;
+          --width_h:100vw;
+        }
+        .desktop{display: none !important;}
+        .phone{display: flex;}
+        header>.upper{justify-content: space-around ; height: 32px;}
+        .menu{display: none !important;}
+        header>.lower>a>img{display: none;}
+        header>.lower{background-color: var(--black);}
+        header>.lower>a.rate{background-color: var(--black); color: var(--white); font-weight: 400;}
+        header>.lower>a{padding: 0;}
+        main>.landing{display: none;}
+        main>.advertising1{height: min-content;}
+        main>.advertising1>img{aspect-ratio: 9/1; width: 100vw; height: auto;}
+        .prognoseoftheday{height: var(--h1); background-color:var(--brand-c); width: 100vw; color: var(--black); font-weight: 600; display: flex; align-items: center;}
+        .prognoseoftheday > a{padding: 8px 16px; margin: 0 8px; display: flex; align-items: center; justify-content: space-around; border-radius: 4px; color: var(--white); background-color: #111;}
+        .main>.sport>.header{background-color: var(--black); color: var(--white);}
+        .main>.sport>.header>h2>svg{display: none;}
+        .main>.sport>.content{width: 100%;}
+        .content>.advertising2,
+        .content>.advertising4{display: none;}
+        .main>.sport>.content>.bet{width:100%;}
+        .content>.bet>.body>p{padding: 0;}
+        main>.content>.main{width: 95vw;}
+        .content>.bet>.body>.prognose>.line{width: 100%;}
+        .content>.bet>.body>.prognose{display: flex; flex-direction: column; align-items: center; width: 100%;}
+        .content>.bet>.body>.prognose>.line>a>svg>polyline{height: 48px; fill: #5e1;}
+        .content>.bet>.body>.prognose>.line>a>svg>text{fill: #111;}
+        .content>.bet>.body>.prognose>.line>a{aspect-ratio: 24/5; height: 48px;}
+        .content>.bet>.body>.prognose>.line{background-color: #11e; color: var(--white); font-size: var(--f2);}
+        .content>.bet>.body>.prognose>.line>h3{color: var(--white); font-size: var(--f0);}
+        body>header{margin:0}
+        .upper>.logo>h2{margin: 0;}
+        main>.footer>.description{display: none;}
     }
   </style>
   <header>
@@ -589,6 +630,10 @@ $conn->set_charset("utf8");
     <nav class="lower">
         <a href="#football"><img class="icon" src="https://rohhthone.github.io/betfm/icon1.svg" alt="icon"> Футбол</a><a href="#hockey"><img class="icon screen0" src="https://rohhthone.github.io/betfm/icon2.svg" alt="icon">Хоккей</a><a href="#basketball" id="screen1" ><img class="icon" src="https://rohhthone.github.io/betfm/icon6.svg" alt="icon">Баскетбол</a><a href="#tennis" id="screen2" ><img class="icon" src="https://rohhthone.github.io/betfm/icon3.svg" alt="icon">Теннис</a><a href="#fighting" id="screen3" ><img class="icon" src="https://rohhthone.github.io/betfm/icon4.svg" alt="icon">Бокс и ММА</a><a href="#cybersport" id="screen4" ><img class="icon" src="https://rohhthone.github.io/betfm/icon5.svg" alt="icon">Киберспорт</a><a class="rate brand" href="#express"><span class="icon"></span>экспрессы</a>
     </nav>
+    <div class="phone prognoseoftheday">
+      <a class="a">Прогноз дня</a>
+      <img src="" alt="">
+    </div>
   </header>
   <main>
     <style>
@@ -621,6 +666,7 @@ $conn->set_charset("utf8");
       <style>.advertising1{width: 100%;height: 20vh; display: flex; align-items: center; justify-content: space-around;}.advertising1>img{width: 970px; height: 90px; object-fit: cover;} </style>
       <img src="https://rohhthone.github.io/betfm/images/image_10.png" alt="">
     </div>
+    <h2 class="phone" style="font-size: 1em; margin: 8px;">Прогнозы на сегодня</h2>
     <div class="content">
       <style>
       .content{width: 100%;height: auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
@@ -640,10 +686,10 @@ $conn->set_charset("utf8");
       .content>.bet:first-child>.header{border-top: none;}
       .bet.active>.header>button{display: none;}
       .bet.active>.header{padding:var(--s1) var(--s0) var(--s1) 0; box-sizing: border-box; margin: var(--s1) 0;}
-      .bet>.header>.title{width: 60%;}
+      .bet>.header>.title{width: 60%; margin-left: var(--s1);}
       .bet>.header>.coefficient{background-color: var(--white); color: var(--black); padding: var(--s2) var(--s1); border-radius: var(--s2); font-weight: 700; letter-spacing: var(--upperspacing); margin: 0 var(--s0);}
       .bet>.header>.time{ margin: 0 var(--s1);}
-      .bet>.body{width: 100%; font-size: var(--f2); margin-left: var(--s2);}
+      .bet>.body{width: 100%; font-size: var(--f2);}
       .bet>.body>p{box-sizing: border-box; padding: 0 var(--h2); font-weight:300;}
       .bet>.body>.prognose{width: 100%; height: auto;}
       .bet>.body>.prognose>h2{margin: var(--s0) var(--h2); font-size: var(--f0); font-weight: 400;}
@@ -704,9 +750,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -766,9 +817,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -828,9 +884,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -891,9 +952,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -953,9 +1019,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -1015,9 +1086,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -1077,9 +1153,14 @@ if ($result->num_rows > 0) {
           <h2>ПРОГНОЗ BET FM</h2>
           <div class="line">
             <h3><?= $row["prognose"] ?></h3>
-            <a href="" class="bet">
+            <a href="" class="bet desktop">
               <svg viewBox="0 0 500 100" fill="white">
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
+              </svg>
+            </a>
+            <a href="" class="bet phone">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
+                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
