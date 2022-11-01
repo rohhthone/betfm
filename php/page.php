@@ -522,7 +522,7 @@ $conn->set_charset("utf8");
       .bet>.body>.prognose>.line>a:hover>svg{filter: drop-shadow(0 0 var(--s3) rgba(0, 0, 0, 1));}
       .bet>.body>.prognose>.line>a:hover>svg>polyline{fill:var(--brand-c); stroke:var(--black);}
       body footer>a:hover{box-shadow: 0 0 0 0; opacity: 1; border: none;}
-      .phone{display: none;}
+      .phone{display: none !important;}
 
     @media screen and (max-width:1280px) {
         #screen4{display: none;}
@@ -554,8 +554,10 @@ $conn->set_charset("utf8");
           --width_h:500px;
         }
     }
+    
     @media screen and (max-width:100vh) {
-        #screen1{display: flex;}
+        #screen1{display: flex !important;}
+        #screen2{display: flex !important;}
         :root{
           --f0:14px;
           --f1:13px;
@@ -563,17 +565,19 @@ $conn->set_charset("utf8");
           --width_h:100vw;
         }
         .desktop{display: none !important;}
-        .phone{display: flex;}
+        .phone{display: flex !important;}
         header>.upper{justify-content: space-around ; height: 32px;}
         .menu{display: none !important;}
         header>.lower>a>img{display: none;}
         header>.lower{background-color: var(--black);}
         header>.lower>a.rate{background-color: var(--black); color: var(--white); font-weight: 400;}
         header>.lower>a{padding: 0;}
+        header>.lower>a:hover{box-shadow: none;}
         main>.landing{display: none;}
         main>.advertising1{height: min-content;}
-        main>.advertising1>img{aspect-ratio: 9/1; width: 100vw; height: auto;}
-        .prognoseoftheday{height: var(--h1); background-color:var(--brand-c); width: 100vw; color: var(--black); font-weight: 600; display: flex; align-items: center;}
+        main>.advertising1>img{width: 320px; height: 50px;}
+        .prognoseoftheday{height: var(--h1); background-color:var(--brand-c); width: 100vw; color: var(--black); font-weight: 600; display: flex; align-items: center;    justify-content: space-between;}
+        .prognoseoftheday>img{width: calc(100vw - 150px);}
         .prognoseoftheday > a{padding: 8px 16px; margin: 0 8px; display: flex; align-items: center; justify-content: space-around; border-radius: 4px; color: var(--white); background-color: #111;}
         .main>.sport>.header{background-color: var(--black); color: var(--white);}
         .main>.sport>.header>h2>svg{display: none;}
@@ -581,18 +585,27 @@ $conn->set_charset("utf8");
         .content>.advertising2,
         .content>.advertising4{display: none;}
         .main>.sport>.content>.bet{width:100%;}
-        .content>.bet>.body>p{padding: 0;}
+        .content>.bet>.body>p{padding: 0 8px; font-size: 13px;}
         main>.content>.main{width: 95vw;}
-        .content>.bet>.body>.prognose>.line{width: 100%;}
         .content>.bet>.body>.prognose{display: flex; flex-direction: column; align-items: center; width: 100%;}
         .content>.bet>.body>.prognose>.line>a>svg>polyline{height: 48px; fill: #5e1;}
         .content>.bet>.body>.prognose>.line>a>svg>text{fill: #111;}
-        .content>.bet>.body>.prognose>.line>a{aspect-ratio: 24/5; height: 48px;}
-        .content>.bet>.body>.prognose>.line{background-color: #11e; color: var(--white); font-size: var(--f2);}
+        .content>.bet>.body>.prognose>.line>a{ height: 48px;}
+        .content>.bet>.body>.prognose>.line{background-color: #11e; color: var(--white); font-size: var(--f2);width: 100vw;}
         .content>.bet>.body>.prognose>.line>h3{color: var(--white); font-size: var(--f0);}
         body>header{margin:0}
         .upper>.logo>h2{margin: 0;}
         main>.footer>.description{display: none;}
+        main>.footer{justify-content: space-around;}
+        main>.content{justify-content: space-around;}
+    }
+    @media screen and (max-width:100vh) and (max-width:375px){
+        #screen1{display: flex;}
+        #screen2{display: none !important;}
+    }
+    @media screen and (max-width:100vh) and (max-width:330px){
+        #screen1{display: none !important;}
+        #screen2{display: none !important;}
     }
   </style>
   <header>
@@ -632,7 +645,7 @@ $conn->set_charset("utf8");
     </nav>
     <div class="phone prognoseoftheday">
       <a class="a">Прогноз дня</a>
-      <img src="" alt="">
+      <img src="https://rohhthone.github.io/betfm/1.png" alt="">
     </div>
   </header>
   <main>
@@ -755,9 +768,9 @@ if ($result->num_rows > 0) {
                 <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="150" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
-            <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+            <a href="" class="bet phone" style="width: auto">
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -823,8 +836,8 @@ if ($result->num_rows > 0) {
               </svg>
             </a>
             <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -890,8 +903,8 @@ if ($result->num_rows > 0) {
               </svg>
             </a>
             <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -958,8 +971,8 @@ if ($result->num_rows > 0) {
               </svg>
             </a>
             <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -1025,8 +1038,8 @@ if ($result->num_rows > 0) {
               </svg>
             </a>
             <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -1092,8 +1105,8 @@ if ($result->num_rows > 0) {
               </svg>
             </a>
             <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
@@ -1159,8 +1172,8 @@ if ($result->num_rows > 0) {
               </svg>
             </a>
             <a href="" class="bet phone">
-              <svg viewBox="0 0 200 100" fill="white" style="width: 240px; height:48px">
-                <polyline points="0,100 50,0 500,0 500,100 0,100"/><text x="75" y="60" fill="black">Сделать ставку</text>
+              <svg viewBox="0 0 200 100" fill="white" style="width: 148px;height:48px">
+                <polyline points="-50,100 0,0 500,0 500,100 0,100"></polyline><text x="0" y="60" fill="black">Сделать ставку</text>
               </svg>
             </a>
           </div>
